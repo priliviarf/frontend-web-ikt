@@ -17,7 +17,7 @@ figure {
 	    position: absolute;
 	    top: 50%;
 	    left: 50%;
-	    transform: translateX(-50%);
+	    transform: translate(-50%,-50%);
 	}
 }
 
@@ -123,7 +123,6 @@ homepage
 .newsList {
 	border-bottom: 1px solid $lightgray;
 	padding-bottom: 20px;
-	margin: 0 30px;
 }
 .agendaSection {
 	
@@ -148,10 +147,86 @@ homepage
 	background-color: $lightwhite;
 
 	.galleryList {
+		overflow: hidden;
 		
 		.overlay {
 			@include overlay($darkblue,0.6);
+			opacity:0;
+			@include radius(50%);
+			@include transition(0.4);
 			top: 0;
 		}
+		figcaption {
+			@include transition(0.4);
+			opacity:0;
+
+			&.figcaptionTop {
+				top: 30px;
+			}
+
+			&.figcaptionBottom {
+				top:auto;
+				bottom: 10px;
+			}
+		}
+	}
+	a:hover {
+
+		.overlay {
+			opacity: 0.7;
+			@include radius(0);
+		}
+
+		figcaption {
+			opacity: 1;
+
+			&.figcaptionTop {
+				top: 45%;
+			}
+			&.figcaptionBottom {
+				bottom: 35%;
+			}
+		}
+	}
+	.col-md-8 a:hover {
+			.figcaptionTop {
+				top: 45%;
+			}
+			.figcaptionBottom {
+				bottom: 45%;
+			}
+		}
+}
+#testi {
+	background-color: $darkblue;
+	color: $white;
+}
+.socialMedia {
+    li {
+        display: inline-block;
+        margin: 20px 5px;
+
+        a {
+            border-radius: 100%;
+            color: $lightgray;
+            border: 2px solid $lightgray;
+            font-weight: 400;
+            padding: 10px 10px;
+            @include transition(0.3);
+        }
+    }
+}
+.map {
+	background-color: $lightgray;
+}
+.hiddenSec {
+	background-color: $gray;
+}
+footer {
+	background-color: $black;
+	color: $white;
+
+	figure {
+		max-width: 30%;
 	}
 }

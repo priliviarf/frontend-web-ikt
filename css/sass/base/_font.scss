@@ -18,6 +18,9 @@
     font-style : normal ;
 }
 /* --- Font Color --- */
+.lg-wh {
+	color: $lightwhite !important;
+}
 .wh{
 	color: $white !important;
 }
@@ -26,6 +29,9 @@
 }
 .or{
 	color: $orange !important;
+}
+.lg-gray {
+	color: $lightgray !important;
 }
 .gray {
 	color: $gray !important;
