@@ -1,0 +1,28 @@
+/*
+	Project name : IKT Web
+	Date created : 28 July 2017
+	Copyright (c) 2017. All Rights Reserved
+
+	FOR IKT Web ONLY
+ */
+
+$lightblue : #2196f3;
+$blue : #0652fd;
+$darkblue: #113ea5;
+$lightorange : #f1c40f;
+$orange : #fac312;
+$darkorange : #e67e22;
+$lightestwhite: #fafafa;
+$lightwhite: #f7f7f7;
+$white : #ffffff;
+$lightgray : #ebebeb;
+$gray: #636363;
+$black: #0d0f10;
+
+@import 'sass/helpers/_mixin';
+@import 'sass/base/_font';
+@import 'sass/base/_reset';
+@import 'sass/layout/_layout';
+@import 'sass/theme/_button';
+@import 'sass/theme/_theme';
+@import 'sass/layout/_responsive';
