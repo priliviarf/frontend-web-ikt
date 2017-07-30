@@ -43,6 +43,11 @@ li {
 .fullWidth {
 	width: 100%;
 }
+@for $i from 0 through 5{
+	.wd-#{$i*20}{
+		width: $i*20%;
+	}
+}
 
 /* --- Margin and Padding --- */
 @for $i from 0 through 6{
@@ -165,4 +170,11 @@ h2 {
 }
 .panel-default>.panel-heading+.panel-collapse>.panel-body {
 	border: none;
+}
+
+.roundImage {
+	img {
+		@include radius(100%);
+		@include img-bg();
+	}
 }
