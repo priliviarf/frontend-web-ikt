@@ -17,6 +17,11 @@
   font-weight: normal;
   font-style: normal; }
 @font-face {
+  font-family: "Roboto-Black";
+  src: url("../fonts/Roboto-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
   font-family: "Roboto-Medium";
   src: url("../fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: normal;
@@ -77,8 +82,17 @@ h2, h3 {
 .roboBold {
   font-family: 'Roboto-Bold', sans-serif !important; }
 
+.roboBlack {
+  font-family: 'Roboto-Black', sans-serif !important; }
+
 .roboMedium {
   font-family: 'Roboto-Medium', sans-serif !important; }
+
+.roboRegular {
+  font-family: 'Roboto-Regular', sans-serif !important; }
+
+.upper {
+  text-transform: uppercase; }
 
 /* --- Common reset --- */
 html, body {
@@ -92,8 +106,13 @@ figure {
   figure figcaption {
     text-align: center; }
 
-a:hover {
-  text-decoration: none; }
+a {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+  a:hover {
+    text-decoration: none; }
 
 li {
   list-style-type: none; }
@@ -103,6 +122,9 @@ li {
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out; }
+
+nav button span {
+  background-color: #ffffff; }
 
 .containerCenter {
   position: absolute;
@@ -557,10 +579,21 @@ h2 {
   overflow: hidden; }
   .figSlider > img {
     position: absolute;
-    height: auto; }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh; }
 
 #about {
-  padding: 150px 70px 0; }
+  padding: 150px 70px 30px; }
+  #about .figAbout .col-md-6 {
+    padding: 0; }
+    #about .figAbout .col-md-6 figure {
+      padding: 7px; }
+      #about .figAbout .col-md-6 figure img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; }
 
 #vision {
   padding: 0px 15px; }
@@ -607,8 +640,8 @@ h2 {
   .multiple-items figure .overlay {
     width: 100%;
     height: 100%;
-    background: #113ea5;
-    opacity: 0.5;
+    background: #0652fd;
+    opacity: 0.7;
     position: absolute;
     height: 60px;
     bottom: -60px;
@@ -623,14 +656,18 @@ h2 {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out; }
+    -o-transition: all 0.3s ease-in-out;
+    color: #0d0f10;
+    font-family: 'Roboto-Medium', sans-serif; }
+    .multiple-items figure figcaption:hover {
+      color: #ffffff; }
 .multiple-items .newsList:hover .overlay, .multiple-items .newsList:hover figcaption {
   bottom: 0; }
 .multiple-items .newsList:hover img {
   background-size: 110%; }
 
 #agenda {
-  padding: 70px 70px 0; }
+  padding: 70px 70px; }
 
 .agendaSection > .row {
   position: relative; }
@@ -666,7 +703,12 @@ h2 {
     min-width: 16px; }
 
 .map {
-  height: 45vh; }
+  height: 45vh;
+  position: relative; }
+  .map iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
 
 .hiddenSec {
   height: 65vh; }
@@ -762,7 +804,7 @@ figure figcaption {
   -moz-border-radius: 0;
   -o-border-radius: 0; }
   .dropdown-menu > li > a {
-    padding: 10px 30px; }
+    padding: 20px 30px; }
     .dropdown-menu > li > a:hover {
       color: #ffffff; }
 
@@ -791,16 +833,18 @@ figure figcaption {
 /***********************************
 homepage 
 ***********************************/
-.figSlider .overlay {
-  width: 100%;
-  height: 100%;
-  background: #0d0f10;
-  opacity: 0.6;
-  position: absolute; }
-.figSlider h2 {
-  color: #2196f3; }
-.figSlider p {
-  color: #ffffff; }
+.figSlider {
+  cursor: -webkit-grab; }
+  .figSlider .overlay {
+    width: 100%;
+    height: 100%;
+    background: #0d0f10;
+    opacity: 0.3;
+    position: absolute; }
+  .figSlider h2 {
+    color: #2196f3; }
+  .figSlider p {
+    color: #ffffff; }
 
 #vision {
   background-color: #f7f7f7; }
@@ -808,10 +852,30 @@ homepage
 .missionSection {
   background-color: #113ea5;
   color: #ffffff; }
+  .missionSection .panel-title {
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out; }
+    .missionSection .panel-title:hover {
+      color: #fac312; }
+  .missionSection i.fa-chevron-down {
+    color: #f7f7f7;
+    font-size: 0.6em;
+    float: right;
+    margin-top: 20px; }
 
 .newsList {
   border-bottom: 1px solid #b1b1b1;
   padding-bottom: 20px; }
+  .newsList a h4 {
+    color: #113ea5;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out; }
+  .newsList a:hover h4 {
+    color: #2196f3; }
 
 .agendaSection > .row .col-md-6 {
   margin-top: 20vh;
@@ -821,7 +885,10 @@ homepage
   margin-top: 5px;
   margin-bottom: 7px; }
 .agendaList a {
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'Roboto-Medium', sans-serif; }
+  .agendaList a:hover {
+    color: #0d0f10; }
 
 #gallery {
   background-color: #f7f7f7; }
@@ -853,7 +920,8 @@ homepage
         top: 30px; }
       #gallery .galleryList figcaption.figcaptionBottom {
         top: auto;
-        bottom: 10px; }
+        bottom: 10px;
+        font-family: 'Roboto-Medium', sans-serif; }
   #gallery a:hover .overlay {
     opacity: 0.7;
     border-radius: 0;
@@ -866,6 +934,8 @@ homepage
       top: 45%; }
     #gallery a:hover figcaption.figcaptionBottom {
       bottom: 35%; }
+      #gallery a:hover figcaption.figcaptionBottom:hover {
+        color: #fac312; }
   #gallery .col-md-8 a:hover .figcaptionTop {
     top: 45%; }
   #gallery .col-md-8 a:hover .figcaptionBottom {
@@ -884,10 +954,32 @@ homepage
     border: 2px solid #b1b1b1;
     font-weight: 400;
     padding: 10px 10px;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out; }
+    position: relative; }
+    .socialMedia li a:before {
+      content: '';
+      z-index: -100;
+      position: absolute;
+      width: 46px;
+      height: 46px;
+      border-radius: 100%;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -o-border-radius: 100%;
+      top: -5px;
+      left: -5px;
+      opacity: 0; }
+    .socialMedia li a.fb:hover {
+      background-color: #3b5999;
+      color: #ffffff;
+      border: 2px solid #3b5999; }
+    .socialMedia li a.tw:hover {
+      background-color: #2ac6f7;
+      color: #ffffff;
+      border: 2px solid #2ac6f7; }
+    .socialMedia li a.ig:hover {
+      background-color: #fb3958;
+      color: #ffffff;
+      border: 2px solid #fb3958; }
 
 .map {
   background-color: #b1b1b1; }
@@ -900,5 +992,34 @@ footer {
   color: #ffffff; }
   footer figure {
     max-width: 30%; }
+
+@media screen and (max-width: 996px) {
+  p {
+    font-size: 0.9em; } }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2em !important; }
+
+  .bigger {
+    font-size: 1.3em !important; }
+
+  .dropdown-menu {
+    position: relative;
+    width: 100%; }
+
+  #news {
+    padding-left: 10px;
+    padding-right: 10px; } }
+@media screen and (max-width: 400px) {
+  #about, .visionSection, .missionSection {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  #news {
+    padding-left: 0px;
+    padding-right: 0px; }
+
+  #about {
+    padding-top: 70px; } }
 
 /*# sourceMappingURL=ikt-style.css.map */

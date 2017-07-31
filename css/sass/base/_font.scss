@@ -12,6 +12,12 @@
     font-style : normal ;
 }
 @font-face{
+    font-family: 'Roboto-Black' ;
+    src : url('../fonts/Roboto-Black.ttf')  format('truetype');
+    font-weight: normal ;
+    font-style : normal ;
+}
+@font-face{
     font-family: 'Roboto-Medium' ;
     src : url('../fonts/Roboto-Medium.ttf')  format('truetype');
     font-weight: normal ;
@@ -75,6 +81,16 @@ h2,h3 {
 .roboBold {
 	font-family: 'Roboto-Bold', sans-serif !important;
 }
+.roboBlack {
+	font-family: 'Roboto-Black', sans-serif !important;
+}
 .roboMedium {
 	font-family: 'Roboto-Medium', sans-serif !important;
+}
+.roboRegular {
+	font-family: 'Roboto-Regular', sans-serif !important;
+}
+
+.upper {
+	text-transform: uppercase
 }

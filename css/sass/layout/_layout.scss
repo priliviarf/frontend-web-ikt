@@ -21,11 +21,27 @@
 
 	&>img {
 		position: absolute;
-		height: auto;
+		@include img-bg();
+		min-height:100vh;
 	}
 }
 #about {
-	padding: 150px 70px 0;
+	padding: 150px 70px 30px;
+
+	.figAbout {
+
+		.col-md-6 {
+			padding: 0;
+
+			figure {
+				padding: 7px;
+
+				img {
+					@include img-bg();
+				}
+			}
+		}
+	}
 }
 #vision {
 	padding: 0px 15px;
@@ -78,7 +94,7 @@
 		}
 
 		.overlay {
-			@include overlay($darkblue,0.5);
+			@include overlay($blue,0.7);
 			height: 60px;
 			bottom: -60px;
 			@include transition(0.3);
@@ -89,6 +105,12 @@
 		    top: auto;
 		    padding: 5px 20px;
 		    @include transition(0.3);
+		    color: $black;
+		    font-family: 'Roboto-Medium', sans-serif;
+
+		    &:hover {
+		    	color: $white;
+		    }
 		}
 	}
 	.newsList:hover {
@@ -102,7 +124,7 @@
 	}
 }
 #agenda {
-	padding: 70px 70px 0;
+	padding: 70px 70px;
 }
 .agendaSection {
 	
@@ -148,6 +170,13 @@
 }
 .map {
 	height: 45vh;
+	position: relative;
+
+	iframe {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
 }
 .hiddenSec {
 	height: 65vh;

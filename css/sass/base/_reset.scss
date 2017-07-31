@@ -14,6 +14,7 @@ figure {
 	}
 }
 a {
+	@include transition(0.3);
 	&:hover {
 		text-decoration: none;
 	}
@@ -24,6 +25,13 @@ li {
 	a {
 		color: $blue;
 		@include transition(0.3);
+	}
+}
+nav {
+	button {
+		span {
+			background-color: $white;
+		}
 	}
 }
 .containerCenter {
