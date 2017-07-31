@@ -997,6 +997,9 @@ footer {
   p {
     font-size: 0.9em; } }
 @media screen and (max-width: 768px) {
+  .hidden-768 {
+    display: none; }
+
   h2 {
     font-size: 2em !important; }
 
@@ -1009,7 +1012,14 @@ footer {
 
   #news {
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px; }
+
+  #agenda {
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  .agendaSection > .row .col-md-6 {
+    padding-left: 30px; } }
 @media screen and (max-width: 400px) {
   #about, .visionSection, .missionSection {
     padding-left: 20px;
