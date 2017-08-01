@@ -295,3 +295,41 @@ footer {
 		max-width: 30%;
 	}
 }
+/***********************************
+news-list page
+***********************************/
+.heroTitle{
+	.overlay {
+		@include overlay($black,0.5);
+	}
+}
+#recent-news {
+	background-color: $lightestwhite;
+}
+.tags {
+	li a {
+		border: 1px solid $blue;
+		@include radius(20px);
+		color: $blue;
+		&:hover {
+			color: $white;
+			background-color: $blue;
+		}
+	}
+}
+.footer-1 {
+	a {
+		color: $white;
+		margin-bottom: 10px;
+
+		&:hover {
+			color: $lightblue;
+		}
+	}
+}
+/***********************************
+news-detail page
+***********************************/
+figcaption.caption {
+	color: $gray;
+}

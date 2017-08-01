@@ -72,4 +72,8 @@ $(document).ready(function(){
           autoplaySpeed: 3000
         });
     
+    // reply 
+    $("#showToggle").click(function(){
+        $("#thisToggle").slideToggle("slow");
+    });
 });

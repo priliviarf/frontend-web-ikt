@@ -157,6 +157,10 @@ h2 {
 	border-radius: 0px;
 }
 
+/* --- form --- */
+.form-control {
+	@include radius(0);
+}
 /* --- accordion --- */
 .panel {
 	@include no-box-shadow();
