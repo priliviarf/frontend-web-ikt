@@ -529,6 +529,13 @@ h2 {
 .btn {
   border-radius: 0px; }
 
+/* --- form --- */
+.form-control {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0; }
+
 /* --- accordion --- */
 .panel {
   box-shadow: none !important;
@@ -719,21 +726,25 @@ footer {
   footer figure {
     margin: 0px auto 10px; }
 
+#thisToggle {
+  display: none; }
+
 /***********************************
 news-list page
 ***********************************/
-#heroTitle {
-  height: 35vh; }
-
 .heroTitle {
   position: relative;
-  height: 35vh;
+  height: 45vh;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
   .heroTitle .overlay {
     top: 0; }
+  .heroTitle .container-fluid {
+    position: absolute;
+    bottom: 50px;
+    width: 100%; }
 
 #news-list figure img {
   background-size: cover;
@@ -765,8 +776,26 @@ news-list page
     width: 120px;
     margin: 20px 0; }
 
-.button {
-  position: relative; }
+/***********************************
+news-detail page
+***********************************/
+#news-detail {
+  padding: 30px 0; }
+  #news-detail p {
+    margin-bottom: 20px; }
+
+figcaption.caption {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  margin: 10px 0; }
+
+.btn {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
 
 .btn-default {
   background-color: #636363;
@@ -776,6 +805,24 @@ news-list page
     background-color: #b1b1b1;
     color: #636363;
     border-color: #b1b1b1; }
+
+.btn-blue-full {
+  background-color: #0652fd;
+  color: #ffffff;
+  border-color: #0652fd; }
+  .btn-blue-full:hover, .btn-blue-full:active, .btn-blue-full:focus {
+    background-color: #113ea5;
+    border-color: #113ea5;
+    color: #ffffff; }
+
+.btn-gray-full {
+  background-color: #b1b1b1;
+  color: #ffffff;
+  border-color: #b1b1b1; }
+  .btn-gray-full:hover, .btn-gray-full:active, .btn-gray-full:focus {
+    background-color: #636363;
+    border-color: #636363;
+    color: #ffffff; }
 
 .btn-blue {
   background-color: transparent;
@@ -1069,9 +1116,6 @@ news-list page
   background: #0d0f10;
   opacity: 0.5;
   position: absolute; }
-.heroTitle h2 {
-  position: absolute;
-  bottom: 50px; }
 
 #recent-news {
   background-color: #fafafa; }
@@ -1092,6 +1136,12 @@ news-list page
   margin-bottom: 10px; }
   .footer-1 a:hover {
     color: #2196f3; }
+
+/***********************************
+news-detail page
+***********************************/
+figcaption.caption {
+  color: #636363; }
 
 @media screen and (max-width: 996px) {
   p {
@@ -1114,6 +1164,9 @@ news-list page
   .dropdown-menu {
     position: relative;
     width: 100%; }
+
+  .heroTitle .container-fluid {
+    bottom: 20px; }
 
   #news {
     padding-left: 10px;

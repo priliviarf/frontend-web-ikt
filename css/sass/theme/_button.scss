@@ -1,5 +1,5 @@
-.button {
-    position: relative;
+.btn {
+    @include transition(0.3);
 }
 .btn-default {
 	background-color: $gray;
@@ -10,6 +10,29 @@
     	background-color: $lightgray;
 	    color: $gray;
 	    border-color: $lightgray;
+    }
+}
+
+.btn-blue-full {
+    background-color: $blue;
+    color: $white;
+    border-color: $blue;
+    
+    &:hover,&:active,&:focus {
+        background-color: $darkblue;
+        border-color: $darkblue;
+        color: $white;
+    }
+}
+.btn-gray-full {
+    background-color: $lightgray;
+    color: $white;
+    border-color: $lightgray;
+    
+    &:hover,&:active,&:focus {
+        background-color: $gray;
+        border-color: $gray;
+        color: $white;
     }
 }
 

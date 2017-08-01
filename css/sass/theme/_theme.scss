@@ -302,10 +302,6 @@ news-list page
 	.overlay {
 		@include overlay($black,0.5);
 	}
-	h2 {
-		position:absolute;
-		bottom: 50px;
-	}
 }
 #recent-news {
 	background-color: $lightestwhite;
@@ -330,4 +326,10 @@ news-list page
 			color: $lightblue;
 		}
 	}
+}
+/***********************************
+news-detail page
+***********************************/
+figcaption.caption {
+	color: $gray;
 }
