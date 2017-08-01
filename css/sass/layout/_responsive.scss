@@ -2,6 +2,14 @@
 	p {
 		font-size: 0.9em;
 	}
+	#recent-news {
+		.pd-lr-30 {
+			padding: 0;
+		}
+		.recent-news> div section {
+			margin:0;
+		}
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -29,14 +37,19 @@
 	.agendaSection > .row .col-md-6 {
 		padding-left: 30px;
 	}
+	#news-list .newsListSec .textForNewsList {
+		position: relative;
+		top: auto;
+		transform: none;
+	}
 }
 
 @media screen and (max-width: 400px) {
-	#about,.visionSection,.missionSection {
+	#about,.visionSection,.missionSection,#recent-news {
 		padding-left:20px;
 		padding-right: 20px;
 	}
-	#news {
+	#news,#news-list  {
 		padding-left:0px;
 		padding-right: 0px;
 	}

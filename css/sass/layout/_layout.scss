@@ -12,7 +12,7 @@
 		height: 100%;
 	}
 }
-#hero,#about,#vision,#news,#agenda,#gallery,.figSlider {
+#hero,#about,#vision,#news,#agenda,#gallery,#recent-news,.figSlider {
 	min-height: 100vh;
 }
 .figSlider {
@@ -72,10 +72,10 @@
 .panel-body {
 	padding: 0 0 0 70px;
 }
-#news,#gallery,#testi {
+#news,#recent-news,#gallery,#testi,#news-list {
 	padding: 70px 40px;
 }
-.multiple-items {
+.multiple-items,.recent-news {
 	&>div {
 
 		section {
@@ -187,5 +187,61 @@ footer {
 
 	figure {
 		margin: 0px auto 10px;
+	}
+}
+/***********************************
+news-list page
+***********************************/
+#heroTitle {
+	height: 35vh;
+}
+.heroTitle{
+	position: relative;
+	height: 35vh;
+	overflow: hidden;
+	@include img-bg();
+
+	.overlay {
+		top:0;
+	}
+}
+#news-list {
+	figure {
+		img {
+			@include img-bg();
+		}
+	}
+	.newsListSec {
+		margin-top: 30px;
+		position:relative;
+
+		.textForNewsList {
+			position: absolute;
+		    right: 0;
+		    top: 50%;
+		    transform: translateY(-50%);
+		}
+	}
+	.asideSec {
+		margin-top: 30px;
+	}
+}
+.tags {
+	padding: 0px;
+
+	li a {
+		float: left;
+	    display: block;
+	    padding: 5px 20px;
+	    margin: 10px 10px 0 0;
+	}
+}
+.footer-1 {
+	height: auto;
+	padding: 40px;
+
+	.logoFooter {
+		width: 120px;
+		margin: 20px 0;
 	}
 }
