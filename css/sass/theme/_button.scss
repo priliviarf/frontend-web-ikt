@@ -1,13 +1,70 @@
+.btn {
+    @include transition(0.3);
+}
 .btn-default {
 	background-color: $gray;
     color: $white;
     border-color: $gray;
-    @include transition(0.3);
-    @include box-shadow2();
     
     &:hover {
     	background-color: $lightgray;
 	    color: $gray;
 	    border-color: $lightgray;
+    }
+}
+
+.btn-blue-full {
+    background-color: $blue;
+    color: $white;
+    border-color: $blue;
+    
+    &:hover,&:active,&:focus {
+        background-color: $darkblue;
+        border-color: $darkblue;
+        color: $white;
+    }
+}
+.btn-gray-full {
+    background-color: $lightgray;
+    color: $white;
+    border-color: $lightgray;
+    
+    &:hover,&:active,&:focus {
+        background-color: $gray;
+        border-color: $gray;
+        color: $white;
+    }
+}
+
+.btn-blue {
+    background-color: transparent;
+    color: $blue;
+    border-color: $blue;
+    padding: 10px 20px;
+    font-family: 'Roboto-Medium', sans-serif;
+    position:relative;
+    
+    &:hover {
+        color:$white;
+
+        span:before {
+            width: 100%;
+            padding: 10px 20px;
+        }
+    }
+
+    span {
+
+        &:before {
+            @include transition(0.3);
+            content:'';
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $blue;
+            z-index:-1;
+        }
     }
 }

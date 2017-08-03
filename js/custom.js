@@ -78,4 +78,18 @@ $(document).ready(function(){
           autoplaySpeed: 3000
         });
     
+    // reply 
+    $("#showToggle").click(function(){
+        $("#thisToggle").slideToggle("slow");
+    });
+
+    //mansory 
+    $('.grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+
+    //lightcase
+    $('a[data-rel^=lightcase]').lightcase();
 });
