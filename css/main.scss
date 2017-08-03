@@ -7,8 +7,9 @@
  */
 
 $lightblue : #2196f3;
-$blue : #0652fd;
+$blue : #2C82C9;
 $darkblue: #113ea5;
+$deepblue : #42729B ;
 $lightorange : #f1c40f;
 $orange : #fac312;
 $darkorange : #e67e22;
@@ -26,3 +27,6 @@ $black: #0d0f10;
 @import 'sass/theme/_button';
 @import 'sass/theme/_theme';
 @import 'sass/layout/_responsive';
+
+// base layout is loaded from sass/layout
+// base theme is loaded from sass/theme

@@ -105,7 +105,7 @@
 		    top: auto;
 		    padding: 5px 20px;
 		    @include transition(0.3);
-		    color: $black;
+		    color: #c0c0c0 ;
 		    font-family: 'Roboto-Medium', sans-serif;
 
 		    &:hover {
@@ -171,6 +171,14 @@
 .map {
 	height: 45vh;
 	position: relative;
+
+	.overlay-map{
+		position : absolute ;
+		width: 100% ;
+		height: 100% ;
+		background : rgba(0,0,0,0.1) ;
+		z-index : 10 ; 
+	}
 
 	iframe {
 		position: absolute;

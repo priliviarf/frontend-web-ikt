@@ -137,17 +137,17 @@ homepage
 	}
 }
 .newsList {
-	border-bottom: 1px solid $lightgray;
 	padding-bottom: 20px;
+	margin-bottom : 5px ;
 
 	a {
 		h4 {
-			color: $darkblue;
+			color: $deepblue;
 			@include transition(0.3);
 		}
 		&:hover {
 			h4 {
-				color: $lightblue;
+				color: $blue;
 			}
 		}
 	}
@@ -186,11 +186,11 @@ homepage
 			@include overlay($darkblue,0.6);
 			opacity:0;
 			@include radius(50%);
-			@include transition(0.4);
+			@include transition(0.25);
 			top: 0;
 		}
 		figcaption {
-			@include transition(0.4);
+			@include transition(0.25);
 			opacity:0;
 
 			&.figcaptionTop {
