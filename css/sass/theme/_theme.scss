@@ -249,35 +249,23 @@ homepage
             color: $lightgray;
             border: 2px solid $lightgray;
             font-weight: 400;
-            padding: 10px 10px;
-            position: relative;
+            padding : 10px ;
 
-            &:before {
-            	content:'';
-            	z-index: -100;
-            	position: absolute;
-			    width: 46px;
-			    height: 46px;
-			    @include radius(100%);
-			    top: -5px;
-			    left: -5px;
-			    opacity: 0;
-            }
             &.fb:hover{
-                        background-color: #3b5999;
-                        color: $white;
-                        border: 2px solid #3b5999;
-                    }
+                background-color: #3b5999;
+                color: $white;
+                border: 2px solid #3b5999;
+            }
             &.tw:hover{
-                        background-color: #2ac6f7;
-                        color: $white;
-                        border: 2px solid #2ac6f7;
-                    }
+                background-color: #2ac6f7;
+                color: $white;
+                border: 2px solid #2ac6f7;
+            }
             &.ig:hover{
-                        background-color: #fb3958;
-                        color: $white;
-                        border: 2px solid #fb3958;
-                    }
+                background-color: #fb3958;
+                color: $white;
+                border: 2px solid #fb3958;
+            }
         }
     }
 }
