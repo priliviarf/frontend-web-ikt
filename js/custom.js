@@ -3,6 +3,11 @@ $(document).ready(function(){
     // dropdown-menu
     var w = window.innerWidth;
 
+    // $('#myDiv').fullpage({
+    //   sectionSelector : '.pagecontent',
+    //   navigation : true
+    // })
+
     if(w > 768) {
         $('.navbar-nav-dropdown li.has-children').hover(function(){
             $(this).children('ul').stop(true,false,true).slideToggle(400);
@@ -26,6 +31,7 @@ $(document).ready(function(){
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
              $(".navbar-brand").removeClass("beWhite");
         }
+        console.log(window.scrollTop, window.scrollHeight)
     });
 
     // Init Wow
