@@ -25,8 +25,17 @@
 		min-height:100vh;
 	}
 }
+.fp-tooltip{
+		color: #AAA;
+}
+#fp-nav span, .fp-slidesNav span{
+  border-color: #AAA;
+}
+#fp-nav li .active span, .fp-slidesNav .active span{
+  background: #AAA;
+}
 #about {
-	padding: 150px 70px 30px;
+	padding: 0px 70px 0px 70px;
 
 	.figAbout {
 
@@ -73,7 +82,7 @@
 	padding: 0 0 0 70px;
 }
 #news,#recent-news,#gallery,#testi,#news-list,#gallery-list {
-	padding: 70px 40px;
+	padding: 0px 40px;
 }
 .multiple-items,.recent-news {
 	&>div {
@@ -124,7 +133,7 @@
 	}
 }
 #agenda {
-	padding: 70px 70px;
+	padding: 0px 70px;
 }
 .agendaSection {
 	
@@ -154,15 +163,15 @@
 	}
 }
 #testi {
-	padding-bottom: 30px;
 	height: 55vh;
+	padding-top: 75px;
 }
 #contact {
 	height: 45vh;
 	overflow: hidden;
 }
 .contactInfo {
-	padding: 30px 70px;
+	padding: 0px 70px;
 
 	i {
 		min-width: 16px;
