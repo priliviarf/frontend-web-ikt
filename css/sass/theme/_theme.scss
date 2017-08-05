@@ -5,6 +5,11 @@ html,body {
 .beWhite {
     filter: brightness(0) invert(1);   
 }
+.main{
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
 
 /* -------------------- Tags ------------------------- */
 a {
