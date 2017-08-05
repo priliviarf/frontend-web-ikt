@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="main">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" type="text/css" href="./css/lightcase.css">
   <link rel="stylesheet" type="text/css" href="./css/slick.css">
   <link rel="stylesheet" type="text/css" href="./css/ikt-style.css">
-  <link rel="stylesheet" type="text/css" href="./css/jquery.fullpage.min.css">
+  <link rel="stylesheet" href=" ./css/jquery.fullpage.min.css">
 </head>
 <body>
 <div class="loader"></div>
@@ -90,10 +90,8 @@
   </div>
 </nav>
 <!--/NAV-->
-<!--FULLPAGE.JS-->
-<div id="fullpage">
 <!--HERO-->
-<section id="hero" class="pagecontent section ">
+<section id="hero" class="pagecontent">
   <section class="slider">
     <div>
       <figure class="figSlider">
@@ -136,10 +134,10 @@
 </section>
 <!--/HERO-->
 <!--ABOUT-->
-<section id="about" class="pagecontent section">
+<section id="about" class="pagecontent">
   <div class="container-fluid">
     <section class="row">
-      <div class="about col-md-6 wow fadeInUpBig">
+      <div class="col-md-6 wow fadeInUpBig">
         <hr class="hrSpec hrSpecOrange">
         <h3 class="mg-b-30 roboBold">Tentang Kami</h3>
         <p class="big">Aliquam principes deterruisset cum et, vel an eius equidem. Id quando legimus inermis eum, cibo consul democritum cum te, cu cum suas laudem graeci. Bonorum gloriatur signiferumque an pro.</p>
@@ -173,10 +171,9 @@
     </section>
   </div>
 </section>
-
 <!--/ABOUT-->
 <!--VISI-MISI-->
-<section id="vision" class="wow fadeInUpBig section">
+<section id="vision" class="wow fadeInUpBig">
   <section class="row">
     <div class="col-md-6 noPad beRelative wow fadeInUpBig">
       <div class="visionSection">
@@ -259,7 +256,7 @@
       </section>
       <!--/VISI-MISI-->
       <!--RECENT NEWS-->
-      <section id="news" class="pagecontent section">
+      <section id="news" class="pagecontent">
         <div class="container-fluid wow fadeInUpBig">
           <section class="pd-lr-30">
             <hr class="hrSpec hrSpecOrange">
@@ -353,10 +350,9 @@
           </div>
         </div>
       </section>
-      
       <!--/RECENT NEWS-->
       <!--AGENDA-->
-      <section id="agenda" class="pagecontent section">
+      <section id="agenda" class="pagecontent">
         <div class="container-fluid">
           <section class="agendaSection">
             <section class="row">
@@ -393,7 +389,7 @@
       </section>
       <!--/AGENDA-->
     <!--GALERRY-->
-    <section id="gallery" class="wow fadeInUp section">
+    <section id="gallery" class="wow fadeInUp">
       <div class="container-fluid">
         <h3 class="alignCenter roboBold">Gallery</h3>
         <p class="alignCenter">Vix eu etiam mediocrem. Qui debet essent omnium ut. Ne qui recusabo temporibus</p>
@@ -462,7 +458,6 @@
     </section>
     <!--/GALERRY-->
     <!--TESTI-->
-    <div class="section">
     <section id="testi" class="wow fadeInRight">
       <div class="container-fluid">
         <section class="pd-lr-30">
@@ -634,8 +629,6 @@
         </section>
       </section>
       <!--/CONTACT-->
-    </div>
-      </div>
       <!--footer-->
       <!-- <div class="hiddenSec"></div> -->
       <footer>
@@ -659,19 +652,5 @@
   <script src="./js/jquery.fullpage.min.js"></script>
   <script src="./js/mansory.js"></script>
   <script src="./js/custom.js"></script>
-  <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage', '8thPage'],
-				navigation: true,
-				navigationPosition: 'right',
-				navigationTooltips: ['Hero', 'About Us', 'Vision and Mission', 'News', 'Agenda', 'Gallery', 'Testimonial', 'Contact Us'],
-        scrollBar: true,
-        afterRender: function(){
-            new WOW().init();
-        }
-			});
-		});
-	</script>
 </body>
 </html>
