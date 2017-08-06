@@ -21,6 +21,12 @@
 </head>
 <body>
 <div class="loader"></div>
+<div id="search-field">
+  <span id="closeSearch"><i class="fa fa-times"></i></span>
+  <form action="">
+    <input type="text" placeholder="type something here and press enter" class="searchfield" />
+  </form>
+</div>
   <!--NAV-->
   <nav id="navbar" class="navbar navbar-fixed-top">
     <div class="container-fluid">
@@ -69,7 +75,7 @@
             <li><a href="#">CCTV</a></li>
           </ul>
         </li>
-        <li class="has-children has-children-right"><a href="#"><i class="fa fa-search"></i></a>
+        <li class="has-children has-children-right"><a href="#" id="searchButton"><i class="fa fa-search"></i></a>
           <!-- <ul class="dropdown-menu dropdown-menu-search">
             <li>
               <a href="#">
