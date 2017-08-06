@@ -82,6 +82,38 @@ figure {
 		}
 	}
 }
+#search-field{
+	position : fixed ;
+	width : 100% ;
+	height : 100% ;
+	background : $deepblue ;
+	z-index : 1050 ;
+	display : none ;
+
+	.searchfield{
+		background : $white ;
+		width: 80% ;
+		font-size: 30px ;
+		padding : 30px ;
+		position : absolute ;
+		top: 50% ;
+		left: 50% ;
+		transform: translateX(-50%) translateY(-50%) ;
+		border : solid 2px $lightgray ;
+	}
+
+	#closeSearch{
+		color : $white ;
+		cursor: pointer ;
+		position : absolute ;
+		top : 0 ;
+		right : 0 ;
+		margin : 20px 40px ;
+		font-size: 30px ;
+
+		@include transition(0.25) ;
+	}
+}
 /* ------------------ Line --------------------------- */
 .hrSpec {
     margin: 10px 0;

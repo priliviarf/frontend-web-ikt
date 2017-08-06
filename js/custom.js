@@ -3,10 +3,20 @@ $(document).ready(function(){
     // dropdown-menu
     var w = window.innerWidth;
 
-    // $('#myDiv').fullpage({
-    //   sectionSelector : '.pagecontent',
-    //   navigation : true
-    // })
+    $('#fullpage').fullpage({
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Home', 'About Us', 'Vision and Mission', 'News', 'Agenda', 'Gallery', 'Testimonial', 'Contact Us'],
+        scrollBar: true,
+        afterRender: function(){
+            wow = new WOW( {
+              animateClass: 'animated',
+              offset:       100
+            });
+            wow.init();
+        },
+        sectionSelector : '.pagecontent',
+      });
 
     if(w > 768) {
         $('.navbar-nav-dropdown li.has-children').hover(function(){
@@ -31,43 +41,36 @@ $(document).ready(function(){
             $(".navbar-fixed-top").removeClass("top-nav-collapse");
              $(".navbar-brand").removeClass("beWhite");
         }
-        console.log(window.scrollTop, window.scrollHeight)
     });
-
-    // Init Wow
-    wow = new WOW( {
-        animateClass: 'animated',
-        offset:       100
-    });
-    wow.init();
 
     // slick
     $('.multiple-items').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-            responsive: [
-                {
-                  breakpoint: 1024,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                  }
-                },
-                {
-                  breakpoint: 768,
-                  settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                  }
-                },
-                {
-                  breakpoint: 600,
-                  settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                  }
-                }]
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
       });
     $(".slider").slick({
           dots: true,
@@ -91,5 +94,16 @@ $(document).ready(function(){
     });
 
     //lightcase
-    $('a[data-rel^=lightcase]').lightcase();
+    $('a[data-rel^=lightcase]').lightcase({
+      transition: 'fade'
+    });
+
+    $('#searchButton').on('click', function(e){
+      e.preventDefault()
+      $('#search-field').fadeIn()
+    })
+    $('#closeSearch').on('click', function(e){
+      e.preventDefault()
+      $('#search-field').fadeOut()
+    })
 });
