@@ -3,10 +3,16 @@ $(document).ready(function(){
     // dropdown-menu
     var w = window.innerWidth;
 
-    // $('#myDiv').fullpage({
-    //   sectionSelector : '.pagecontent',
-    //   navigation : true
-    // })
+    $('#fullpage').fullpage({
+        navigation: true,
+        navigationPosition: 'right',
+        navigationTooltips: ['Home', 'About Us', 'Vision and Mission', 'News', 'Agenda', 'Gallery', 'Testimonial', 'Contact Us'],
+        scrollBar: true,
+        afterRender: function(){
+            new WOW().init();
+        },
+        sectionSelector : '.pagecontent',
+      });
 
     if(w > 768) {
         $('.navbar-nav-dropdown li.has-children').hover(function(){
@@ -91,5 +97,7 @@ $(document).ready(function(){
     });
 
     //lightcase
-    $('a[data-rel^=lightcase]').lightcase();
+    $('a[data-rel^=lightcase]').lightcase({
+      transition: 'fade'
+    });
 });
