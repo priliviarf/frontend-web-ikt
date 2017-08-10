@@ -23,7 +23,7 @@ body { font-family: sans-serif; }
 }
 
 .grid-item {
-  height: 270px;
+  height: 250px;
   float: left;
   border-color: hsla(0, 0%, 0%, 0.5);
   overflow: hidden;
@@ -32,7 +32,7 @@ body { font-family: sans-serif; }
 .grid-item--width2 { width:  66.6%; }
 .grid-item--width3 { width:  60%; }
 
-.grid-item--height2 { height: 540px; }
+.grid-item--height2 { height: 500px; }
 .grid-item--height3 { height: 600px; }
 
 /* ----  custom grid-style ---- */
