@@ -60,7 +60,7 @@
 	}
 }
 .visionSection,.missionSection{
-	padding: 70px 70px 0;
+	padding: 80px 70px 0;
 }
 .btFig-half {
 	position: absolute;
@@ -79,7 +79,7 @@
 	}
 }
 .panel-body {
-	padding: 0 0 0 70px;
+	padding: 0 50px 0 70px;
 }
 #news,#recent-news,#gallery,#testi,#news-list,#gallery-list {
 	padding: 0px 40px;
@@ -154,6 +154,11 @@
 		}
 	}
 }
+#gallery {
+	hr {
+		margin-top: 50px;
+	}
+}
 .galleryList {
 	margin: 10px 0;
 	position: relative;
@@ -171,7 +176,7 @@
 	overflow: hidden;
 }
 .contactInfo {
-	padding: 0px 70px;
+	padding: 30px 70px;
 
 	i {
 		min-width: 16px;

@@ -27,7 +27,7 @@
     <input type="text" placeholder="type something here and press enter" class="searchfield" />
   </form>
 </div>
-  <!--NAV-->
+<!--NAV-->
   <nav id="navbar" class="navbar navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -43,58 +43,43 @@
 
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="nav navbar-nav navbar-nav-dropdown navbar-right">
-          <li><a href="#header">BERANDA</a></li>
+          <li class="active"><a href="#header">BERANDA</a></li>
           <li class="has-children"><a href="#">TENTANG</a>
             <ul class="dropdown-menu">
               <li><a href="#">Tentang Kami</a></li>
               <li><a href="#">Sejarah Perusahaan</a></li>
               <li><a href="#">Acara Perusahaan</a></li>
               <li class="has-children"><a href="#">Berthing Plan</a>
-              <!-- <ul class="dropdown-menu level-2">
-                <li><a href="#">International</a></li>
-                <li><a href="#">Domestic</a></li>
-              </ul> -->
-            </li>
-          </ul>
-        </li>
-        <li class="has-children"><a href="#">LAYANAN</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Gambaran Fasilitas</a></li>
-            <li><a href="#">Stevedoring &amp Cardodoring</a></li>
-            <li><a href="#">Receiving &amp Delivering</a></li>
-            <li><a href="#">Storages</a></li>
-          </ul>
-        </li>
-        <li><a href="#">BERITA</a></li>
-        <li><a href="#">GALLERY</a></li>
-        <li><a href="#">PROCUREMENT</a></li>
-        <li class="has-children has-children-right"><a href="#">BATUAN</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Customer Service</a></li>
-            <li><a href="#">Help Desk</a></li>
-            <li><a href="#">CCTV</a></li>
-          </ul>
-        </li>
-        <li class="has-children has-children-right"><a href="#" id="searchButton"><i class="fa fa-search"></i></a>
-          <!-- <ul class="dropdown-menu dropdown-menu-search">
-            <li>
-              <a href="#">
-              <form method="POST" action="">
-                <div class="input-group">
-                  <input type="text" class="form-control col-xs-3" id="" placeholder="Pencarian...">
-                  <div class="input-group-btn">
-                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
-                  </div>
-                </div>
-              </form>
-              </a>
-            </li>
-          </ul> -->
-        </li>
-      </ul>
+                <!-- <ul class="dropdown-menu level-2">
+                  <li><a href="#">International</a></li>
+                  <li><a href="#">Domestic</a></li>
+                </ul> -->
+              </li>
+            </ul>
+          </li>
+          <li class="has-children"><a href="#">LAYANAN</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Gambaran Fasilitas</a></li>
+              <li><a href="#">Stevedoring &amp Cardodoring</a></li>
+              <li><a href="#">Receiving &amp Delivering</a></li>
+              <li><a href="#">Storages</a></li>
+            </ul>
+          </li>
+          <li><a href="#">BERITA</a></li>
+          <li><a href="#">GALLERY</a></li>
+          <li><a href="#">PROCUREMENT</a></li>
+          <li class="has-children has-children-right"><a href="#">BATUAN</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Help Desk</a></li>
+              <li><a href="#">CCTV</a></li>
+            </ul>
+          </li>
+          <li class=""><a href="#" id="searchButton"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 <!--/NAV-->
 <!--FULLPAGE.JS-->
 <div id="fullpage">
@@ -401,68 +386,49 @@
 <!--GALERRY-->
 <section id="gallery" class="wow fadeInUp pagecontent">
   <div class="container-fluid">
-  <h3 class="alignCenter roboBold">Gallery</h3>
-  <p class="alignCenter">Vix eu etiam mediocrem. Qui debet essent omnium ut. Ne qui recusabo temporibus</p>
+  <hr class="hrSpec hrSpecOrange">
+  <h3 class="roboBold">Gallery</h3>
     <!-- mansory -->
-    <div class="grid">
-      <div class="grid-sizer"></div>
-      <div class="grid-item">
-          <figure>
-            <img src="./img/port01.jpg">
-            <a href="./img/port01.jpg" data-rel="lightcase"><div class="overlay"></div></a>
-            <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-            <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
-          </figure>
+    <section class="row">
+      <div class="pd-r-30">
+        <div class="grid">
+          <div class="grid-sizer"></div>
+          <div class="grid-item grid-item--width2">
+              <figure>
+                <img src="./img/port02.jpg">
+                <a href="./img/port02.jpg" data-rel="lightcase"><div class="overlay"></div></a>
+                <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
+                <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+              </figure>
+          </div> 
+          <div class="grid-item grid-item--height2">
+              <figure>
+                <img src="./img/blog02.jpg">
+                <a href="./img/blog02.jpg" data-rel="lightcase"><div class="overlay"></div></a>
+                <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
+                <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+              </figure>
+          </div>
+          <div class="grid-item">
+              <figure>
+                <img src="./img/blog01.jpg">
+                <a href="./img/blog01.jpg" data-rel="lightcase"><div class="overlay"></div></a>
+                <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
+                <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+              </figure>
+          </div>
+          <div class="grid-item">
+              <figure>
+                <img src="./img/blog04.jpg">
+                <a href="./img/blog04.jpg" data-rel="lightcase"><div class="overlay"></div></a>
+                <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
+                <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+              </figure>
+          </div>
+        </div>
       </div>
-      <div class="grid-item grid-item--width2">
-          <figure>
-            <img src="./img/port02.jpg">
-            <a href="./img/port02.jpg" data-rel="lightcase"><div class="overlay"></div></a>
-            <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-            <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
-          </figure>
-      </div> 
-      <div class="grid-item">
-          <figure>
-            <img src="./img/blog01.jpg">
-            <a href="./img/blog01.jpg" data-rel="lightcase"><div class="overlay"></div></a>
-            <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-            <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
-          </figure>
-      </div> 
-      <div class="grid-item grid-item--height2 grid-item--width2">
-          <figure>
-            <img src="./img/port04.jpg">
-            <a href="./img/port04.jpg" data-rel="lightcase"><div class="overlay"></div></a>
-            <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-            <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
-          </figure>
-      </div> 
-      <div class="grid-item grid-item--height2">
-          <figure>
-            <img src="./img/blog02.jpg">
-            <a href="./img/blog02.jpg" data-rel="lightcase"><div class="overlay"></div></a>
-            <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-            <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
-          </figure>
-      </div>
-      <div class="grid-item">
-          <figure>
-            <img src="./img/blog04.jpg">
-            <a href="./img/blog04.jpg" data-rel="lightcase"><div class="overlay"></div></a>
-            <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-            <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
-          </figure>
-      </div>
-      <div class="grid-item">
-          <figure>
-            <img src="./img/blog04.jpg">
-            <a href="./img/blog04.jpg" data-rel="lightcase"><div class="overlay"></div></a>
-            <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-            <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
-          </figure>
-      </div>
-    </div>
+    </section>
+      
 <!-- /mansory -->
   </div>
 </section>
