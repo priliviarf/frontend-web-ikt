@@ -22,7 +22,7 @@
 	.bigger {
 		font-size: 1.3em !important;
 	}
-	.dropdown-menu {
+	.dropdown-submenu>.dropdown-menu,.dropdown-menu {
 		position: relative;
 		width: 100%;
 	}
@@ -47,10 +47,21 @@
 		top: auto;
 		transform: none;
 	}
+	.grid-item {
+	  figure {
+	    &:hover {
+	      figcaption {
+	        &.figcaptionBottom {
+	          bottom: 35%;
+	        }
+	      }
+	    }
+	  }
+	}
 }
 
 @media screen and (max-width: 400px) {
-	#about,.visionSection,.missionSection,#recent-news {
+	#about,.visionSection,.missionSection,#recent-news,#testi,#gallery,#gallery-list {
 		padding-left:20px;
 		padding-right: 20px;
 	}
@@ -60,5 +71,88 @@
 	}
 	#about {
 		padding-top: 70px;
+	}
+	#testi {
+		height: 60vh;
+
+		.mg-b-30 {
+			margin-bottom: 20px;
+		}
+
+		.pd-lr-30 {
+			padding:0 !important;
+		}
+
+		.multiple-items {
+			.rightWidth {
+				width: 75%;
+
+				.mg-t-20 {
+					margin-top: 0 !important;
+				}
+
+				figure.roundImage {
+					display: none;
+				}
+			}
+		}
+	}
+	#contact {
+		height: 40vh;
+
+		.contactInfo {
+			padding: 10px 20px;
+
+			.row.mg-t-30 {
+				margin-top: 10px !important;
+			}
+			.row.mg-t-10 {
+				margin-top: 0px !important;
+			}
+		}
+	}
+	.agendaList {
+		.rightWidth {
+			width: 75%;
+		}
+		h4 {
+			font-size: 1.1em;
+		}
+	}
+	p,.panel-body {
+		font-size : 0.9em !important;
+	}
+	.grid-item {
+	  figure {
+	    &:hover {
+	      figcaption {
+	        &.figcaptionBottom {
+	          bottom: 15%;
+	        }
+	      }
+	    }
+	  }
+	}
+	#gallery {
+		section.pd-lr-20,section.mg-lr-10 {
+			padding: 0 !important;
+			margin:0 !important;
+		}
+		.figcaptionTop {
+			display: none;
+		}
+		div.col-sm-4 {
+			margin-bottom: 20px;
+		}
+		a:hover {
+			figcaption {
+				&.figcaptionBottom {
+					bottom: 15%;
+				}
+			}
+		}
+		.container-fluid.pd-30 {
+			padding: 10px !important;
+		}
 	}
 }
