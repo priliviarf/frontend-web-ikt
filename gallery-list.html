@@ -22,60 +22,79 @@
 
     <div class="loader"></div>
     <div id="myDiv">
-    <!--NAV-->
-    <nav id="navbar" class="navbar navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed floatRight" data-toggle="collapse" data-target="#Navbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="index.html">
-            <img class="beWhite" src="./img/ikt-logo.png">
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="Navbar">
-          <ul class="nav navbar-nav navbar-nav-dropdown navbar-right">
-            <li><a href="#header">BERANDA</a></li>
-            <li class="has-children"><a href="#">TENTANG</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Tentang Kami</a></li>
-                <li><a href="#">Sejarah Perusahaan</a></li>
-                <li><a href="#">Acara Perusahaan</a></li>
-                <li class="has-children"><a href="#">Berthing Plan</a>
-                  <!-- <ul class="dropdown-menu level-2">
-                    <li><a href="#">International</a></li>
-                    <li><a href="#">Domestic</a></li>
-                  </ul> -->
-                </li>
-              </ul>
-            </li>
-            <li class="has-children"><a href="#">LAYANAN</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Gambaran Fasilitas</a></li>
-                <li><a href="#">Stevedoring &amp Cardodoring</a></li>
-                <li><a href="#">Receiving &amp Delivering</a></li>
-                <li><a href="#">Storages</a></li>
-              </ul>
-            </li>
-            <li><a href="#">BERITA</a></li>
-            <li class="active"><a href="#">GALLERY</a></li>
-            <li><a href="#">PROCUREMENT</a></li>
-            <li class="has-children has-children-right"><a href="#">BATUAN</a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Customer Service</a></li>
-                <li><a href="#">Help Desk</a></li>
-                <li><a href="#">CCTV</a></li>
-              </ul>
-            </li>
-            <li class=""><a href="#"><i class="fa fa-search"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--/NAV-->
+   <div id="search-field">
+         <span id="closeSearch"><i class="fa fa-times"></i></span>
+         <form action="">
+           <input type="text" placeholder="type something here and press enter" class="searchfield" />
+         </form>
+       </div>
+       <div id="language-field">
+         <span id="closeLanguage"><i class="fa fa-times"></i></span>
+         <div class="container-fluid containerCenter">
+           <h1 class="roboLight wh mg-b-20">Select a language  :</h1>
+           <form action="">
+             <label><input type="radio" name="gender" value="" checked="1"> Bahasa Indonesia</label> <br>
+             <label><input type="radio" name="gender" value=""> English </label> <br>
+             <label><input type="radio" name="gender" value=""> Jepang </label> <br>
+             <button class="submit btn mg-t-20">Submit</button>
+           </form>
+         </div>
+       </div>
+       <!--NAV-->
+         <nav id="navbar" class="navbar navbar-fixed-top">
+           <div class="container-fluid">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed floatRight" data-toggle="collapse" data-target="#Navbar">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>                        
+               </button>
+               <a class="navbar-brand" href="index.html">
+                 <img class="" src="./img/ikt-logo.png">
+               </a>
+             </div>
+
+             <div class="collapse navbar-collapse" id="Navbar">
+               <ul class="nav navbar-nav navbar-nav-dropdown navbar-right">
+                 <li><a href="./index.html#hero">BERANDA</a></li>
+                 <li class="has-children"><a>TENTANG</a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Tentang Kami</a></li>
+                     <li><a href="#">Sejarah Perusahaan</a></li>
+                     <li><a href="agenda.html">Acara Perusahaan</a></li>
+                     <li class="has-children dropdown-submenu"><a href="#">Berthing Plan</a>
+                       <ul class="dropdown-menu level-2">
+                         <li><a href="#">International</a></li>
+                         <li><a href="#">Domestic</a></li>
+                       </ul>
+                     </li>
+                   </ul>
+                 </li>
+                 <li class="has-children"><a href="#">LAYANAN</a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Gambaran Fasilitas</a></li>
+                     <li><a href="#">Stevedoring &amp Cardodoring</a></li>
+                     <li><a href="#">Receiving &amp Delivering</a></li>
+                     <li><a href="#">Storages</a></li>
+                   </ul>
+                 </li>
+                 <li><a href="./news-list.html">BERITA</a></li>
+                 <li class="active"><a href="./gallery-list.html">GALLERY</a></li>
+                 <li><a href="#">PROCUREMENT</a></li>
+                 <li class="has-children has-children-right"><a href="#">BATUAN</a>
+                   <ul class="dropdown-menu">
+                     <li><a href="#">Customer Service</a></li>
+                     <li><a href="#">Help Desk</a></li>
+                     <li><a href="#">CCTV</a></li>
+                   </ul>
+                 </li>
+                 <li><a href="#" id="languageButton"><i class="fa fa-language fa-lg"></i></a></li>
+                 <li class=""><a href="#" id="searchButton"><i class="fa fa-search"></i></a></li>
+               </ul>
+             </div>
+           </div>
+         </nav>
+       <!--/NAV-->
     <!--HERO-->
     <section id="heroTitle">
       <div class="heroTitle" style="background-image: url('./img/2.jpg');">
@@ -95,7 +114,7 @@
         </section>
         <section class="row mg-bt-30 mg-lr-10">
           <div class="col-md-4 col-sm-4">
-            <a href="#">
+            <a href="gallery-detail.html">
               <figure class="galleryList" class="wow fadeInRight">
                 <img src="./img/bg-img.png" style="background-image: url('./img/port01.jpg');">
                 <div class="overlay"></div>
@@ -105,7 +124,7 @@
             </a>
           </div>
           <div class="col-md-4 col-sm-4">
-            <a href="#">
+            <a href="gallery-detail.html">
               <figure class="galleryList">
                 <img src="./img/bg-img.png" style="background-image: url('./img/port02.jpg');">
                 <div class="overlay"></div>
@@ -115,7 +134,7 @@
             </a>
           </div>
           <div class="col-md-4 col-sm-4">
-            <a href="#">
+            <a href="gallery-detail.html">
               <figure class="galleryList">
                 <img src="./img/bg-img.png" style="background-image: url('./img/port03.jpg');">
                 <div class="overlay"></div>
@@ -143,7 +162,7 @@
                   <img src="./img/port01.jpg">
                   <div class="overlay"></div>
                   <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-                  <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+                  <figcaption class="figcaptionBottom"><a href="gallery-detail.html">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
                 </figure>
             </div>
             <div class="grid-item grid-item--width2">
@@ -151,7 +170,7 @@
                   <img src="./img/port01.jpg">
                   <div class="overlay"></div>
                   <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-                  <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+                  <figcaption class="figcaptionBottom"><a href="gallery-detail.html">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
                 </figure>
             </div> 
             <div class="grid-item grid-item--height2">
@@ -159,7 +178,7 @@
                   <img src="./img/port01.jpg">
                   <div class="overlay"></div>
                   <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-                  <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+                  <figcaption class="figcaptionBottom"><a href="gallery-detail.html">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
                 </figure>
             </div>
             <div class="grid-item grid-item--height2 grid-item--width2">
@@ -167,7 +186,7 @@
                   <img src="./img/port01.jpg">
                   <div class="overlay"></div>
                   <figcaption class="figcaptionTop hidden-768"><i class="fa fa-camera-retro fa-2x"></i></figcaption>
-                  <figcaption class="figcaptionBottom"><a href="#">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
+                  <figcaption class="figcaptionBottom"><a href="gallery-detail.html">Delenit utroque vivendo est ea</a><br>12 July 2017</figcaption>
                 </figure>
             </div> 
           </div>
