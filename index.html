@@ -27,6 +27,18 @@
     <input type="text" placeholder="type something here and press enter" class="searchfield" />
   </form>
 </div>
+<div id="language-field">
+  <span id="closeLanguage"><i class="fa fa-times"></i></span>
+  <div class="container-fluid containerCenter">
+    <h1 class="roboLight wh mg-b-20">Select a language  :</h1>
+    <form action="">
+      <label><input type="radio" name="gender" value="" checked="1"> Bahasa Indonesia</label> <br>
+      <label><input type="radio" name="gender" value=""> English </label> <br>
+      <label><input type="radio" name="gender" value=""> Jepang </label> <br>
+      <button class="submit btn mg-t-20">Submit</button>
+    </form>
+  </div>
+</div>
 <!--NAV-->
   <nav id="navbar" class="navbar navbar-fixed-top">
     <div class="container-fluid">
@@ -44,16 +56,16 @@
       <div class="collapse navbar-collapse" id="Navbar">
         <ul class="nav navbar-nav navbar-nav-dropdown navbar-right">
           <li class="active"><a href="#header">BERANDA</a></li>
-          <li class="has-children"><a href="#">TENTANG</a>
+          <li class="has-children"><a>TENTANG</a>
             <ul class="dropdown-menu">
               <li><a href="#">Tentang Kami</a></li>
               <li><a href="#">Sejarah Perusahaan</a></li>
               <li><a href="#">Acara Perusahaan</a></li>
-              <li class="has-children"><a href="#">Berthing Plan</a>
-                <!-- <ul class="dropdown-menu level-2">
+              <li class="has-children dropdown-submenu"><a href="#">Berthing Plan</a>
+                <ul class="dropdown-menu level-2">
                   <li><a href="#">International</a></li>
                   <li><a href="#">Domestic</a></li>
-                </ul> -->
+                </ul>
               </li>
             </ul>
           </li>
@@ -75,6 +87,7 @@
               <li><a href="#">CCTV</a></li>
             </ul>
           </li>
+          <li><a href="#" id="languageButton"><i class="fa fa-language fa-lg"></i></a></li>
           <li class=""><a href="#" id="searchButton"><i class="fa fa-search"></i></a></li>
         </ul>
       </div>
@@ -138,12 +151,12 @@
       </div>
       <div class="col-md-6 col-sm-6 figAbout wow fadeInRightBig" data-wow-delay="0.5s">
         <section class="row">
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-6 col-sm-6 col-xs-6">
             <figure>
               <img src="./img/bg-img-por.png" style="background-image: url('./img/4.jpg');">
             </figure>
           </div>
-          <div class="col-md-6 col-sm-6">
+          <div class="col-md-6 col-sm-6 col-xs-6">
             <section class="row">
               <div class="col-md-12">
                 <figure>
@@ -442,7 +455,6 @@
         <h3 class="mg-b-30 roboBold">Testimonial</h3>
       </section>
       <div class="multiple-items">
-
         <div>
           <section class="row">
             <div class="floatLeft">
@@ -455,6 +467,10 @@
                   <figure class="roundImage">
                     <img src="./img/bg-square.png" style="background-image: url('./img/thumb.png');">
                   </figure>
+                </div>
+                <div class="col-md-9 col-sm-9">
+                  <p class="roboBold mg-0 mg-t-5">Aliquam principes deterruisset</p>
+                  <span class="lg-gray">Designer</span>
                 </div>
               </div>
             </div>
@@ -472,6 +488,10 @@
                   <figure class="roundImage">
                     <img src="./img/bg-square.png" style="background-image: url('./img/thumb.png');">
                   </figure>
+                </div>
+                <div class="col-md-9 col-sm-9">
+                  <p class="roboBold mg-0 mg-t-5">Aliquam principes deterruisset</p>
+                  <span class="lg-gray">Designer</span>
                 </div>
               </div>
             </div>
@@ -490,6 +510,10 @@
                     <img src="./img/bg-square.png" style="background-image: url('./img/thumb.png');">
                   </figure>
                 </div>
+                <div class="col-md-9 col-sm-9">
+                  <p class="roboBold mg-0 mg-t-5">Aliquam principes deterruisset</p>
+                  <span class="lg-gray">Designer</span>
+                </div>
               </div>
             </div>
           </section>
@@ -506,6 +530,10 @@
                   <figure class="roundImage">
                     <img src="./img/bg-square.png" style="background-image: url('./img/thumb.png');">
                   </figure>
+                </div>
+                <div class="col-md-9 col-sm-9">
+                  <p class="roboBold mg-0 mg-t-5">Aliquam principes deterruisset</p>
+                  <span class="lg-gray">Designer</span>
                 </div>
               </div>
             </div>
@@ -524,6 +552,10 @@
                     <img src="./img/bg-square.png" style="background-image: url('./img/thumb.png');">
                   </figure>
                 </div>
+                <div class="col-md-9 col-sm-9">
+                  <p class="roboBold mg-0 mg-t-5">Aliquam principes deterruisset</p>
+                  <span class="lg-gray">Designer</span>
+                </div>
               </div>
             </div>
           </section>
@@ -540,6 +572,10 @@
                   <figure class="roundImage">
                     <img src="./img/bg-square.png" style="background-image: url('./img/thumb.png');">
                   </figure>
+                </div>
+                <div class="col-md-9 col-sm-9">
+                  <p class="roboBold mg-0 mg-t-5">Aliquam principes deterruisset</p>
+                  <span class="lg-gray">Designer</span>
                 </div>
               </div>
             </div>

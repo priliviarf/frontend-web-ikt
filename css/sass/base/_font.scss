@@ -1,5 +1,17 @@
 /* --- Font Library --- */
 @font-face{
+    font-family: 'Roboto-Thin' ;
+    src : url('../fonts/Roboto-Thin.ttf')  format('truetype');
+    font-weight: normal ;
+    font-style : normal ;
+}
+@font-face{
+    font-family: 'Roboto-Light' ;
+    src : url('../fonts/Roboto-Light.ttf')  format('truetype');
+    font-weight: normal ;
+    font-style : normal ;
+}
+@font-face{
     font-family: 'Roboto-Regular' ;
     src : url('../fonts/Roboto-Regular.ttf')  format('truetype');
     font-weight: normal ;
@@ -89,6 +101,12 @@ h2,h3 {
 }
 .roboRegular {
 	font-family: 'Roboto-Regular', sans-serif !important;
+}
+.roboLight {
+	font-family: 'Roboto-Light', sans-serif !important;
+}
+.roboThin {
+	font-family: 'Roboto-Thin', sans-serif !important;
 }
 
 .upper {

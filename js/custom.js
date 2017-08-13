@@ -106,4 +106,13 @@ $(document).ready(function(){
       e.preventDefault()
       $('#search-field').fadeOut()
     })
+
+    $('#languageButton').on('click', function(e){
+      e.preventDefault()
+      $('#language-field').fadeIn()
+    })
+    $('#closeLanguage').on('click', function(e){
+      e.preventDefault()
+      $('#language-field').fadeOut()
+    })
 });
