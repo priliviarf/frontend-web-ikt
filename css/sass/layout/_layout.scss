@@ -12,6 +12,13 @@
 		height: 100%;
 	}
 }
+.dropdown-submenu {
+	position:relative;
+	&>.dropdown-menu {
+	    top: 0;
+		left: 100%;
+	}
+}
 #hero,#about,#vision,#news,#agenda,#recent-news,.figSlider {
 	min-height: 100vh;
 }
@@ -281,6 +288,16 @@ news-detail page
 
 	p {
 		margin-bottom: 20px;
+	}
+
+	.socialMedia {
+		li {
+			a {
+				@include radius(0);
+				border: none;
+				padding: 10px 15px;
+			}
+		}
 	}
 }
 figcaption.caption {
