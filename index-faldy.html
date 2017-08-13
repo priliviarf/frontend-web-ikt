@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>fullPage.js - Pure Javascript version</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage plugin by Alvaro Trigo. Pure javascript version of full screen slider." />
+	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple,pure,javascript,slider,hijacking" />
+    <meta name="Resource-type" content="Document" />
+    
+    <link rel="stylesheet" type="text/css" href="css/javascript.fullPage.css" />
+    
+    <script src="https://nextparticle.nextco.de/nextparticle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.4/dat.gui.min.js"></script>
+
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 4em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	p{
+		font-size: 1em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+    .content-slide{
+        margin: 0 auto;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+	#slide1,
+	#slide2{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
+	/* Defining each sectino background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(img/3.jpg);
+	}
+	#section0 div{
+		top: 50%;
+		transform: translateY(-50%);
+		position: relative;
+	}
+	#section2{
+		background-image: url(img/1.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(img/bg4.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1,
+    #slide2,
+    #slide3{
+        color: #fff;
+		background: #2c3e50;
+		padding: 6% 0 0 0;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	</style>
+</head>
+<body>
+
+
+<div id="fullpage">
+	<div class="section" id="section0"><div>
+    <img id="logo" 
+        data-init-position="random" 
+        data-init-direction="random" 
+        data-particle-gap="1"
+        data-height="300"
+        src="img/ikt-icon.png">    
+    </div></div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1">
+            <h1>Tentang Kami</h1>
+            <div class="content-slide">
+                <p>Terminal kendaraan Tanjung priok adalah Terminal yang melayani kegiatan jasa kepelabuhanan dibidang bongkar muat kendaraan, alat berat dan suku cadang.</p>
+                <p>Terminal kendaraan tanjung priok merupakan salah satu terminal dari terminal yang lainnya yang melayani kegiatan jasa bongkar muat barang pelabuhan tanjung priok seperti terminal peti kemas, terminal penumpang terminal multi Porpose, terminal curah.</p>
+                <p>Terminal kendaraan tanjung priok adalah terminal kendaran terbesar dan pertama di Indonesia</p>
+            </div>
+        </div>
+		<div class="slide" id="slide2"><h1>Visi</h1></div>
+		<div class="slide" id="slide3"><h1>Misi</h1></div>
+	</div>
+	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+</div>
+
+<script type="text/javascript" src="js/javascript.fullPage.min.js"></script>
+<script type="text/javascript">
+	fullpage.initialize('#fullpage', {
+        verticalCentered: false,
+        sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3:false
+	});
+</script>
+<script type="text/javascript">
+    var nextParticle = new NextParticle(document.all.logo);
+    nextParticle.particleGap = 1;
+    nextParticle.noise = 30;
+    nextParticle.mouseForce = 30;
+    nextParticle.size = Math.max(window.innerWidth, window.innerHeight);
+    nextParticle.colorize = false;
+    nextParticle.tint = '#FF00FF';
+    nextParticle.minWidth = nextParticle.size;
+    nextParticle.minHeight = nextParticle.size;
+    nextParticle.maxWidth = nextParticle.size;
+    nextParticle.maxHeight = nextParticle.size;
+
+    window.onclick = function() {
+        nextParticle.stop();
+    };
+    nextParticle.on('stopped', function() {
+        nextParticle.start();
+    });
+</script>
+
+</body>
+</html>
