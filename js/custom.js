@@ -3,21 +3,6 @@ $(document).ready(function(){
     // dropdown-menu
     var w = window.innerWidth;
 
-    $('#fullpage').fullpage({
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Home', 'About Us', 'Vision and Mission', 'News', 'Agenda', 'Gallery', 'Testimonial', 'Contact Us'],
-        scrollBar: true,
-        afterRender: function(){
-            wow = new WOW( {
-              animateClass: 'animated',
-              offset:       100
-            });
-            wow.init();
-        },
-        sectionSelector : '.pagecontent',
-      });
-
     if(w > 768) {
         $('.navbar-nav-dropdown li.has-children').hover(function(){
             $(this).children('ul').stop(true,false,true).slideToggle(400);
