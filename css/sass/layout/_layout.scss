@@ -289,6 +289,16 @@ news-detail page
 	p {
 		margin-bottom: 20px;
 	}
+
+	.socialMedia {
+		li {
+			a {
+				@include radius(0);
+				border: none;
+				padding: 10px 15px;
+			}
+		}
+	}
 }
 figcaption.caption {
 	position: relative;

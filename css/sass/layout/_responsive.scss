@@ -47,10 +47,21 @@
 		top: auto;
 		transform: none;
 	}
+	.grid-item {
+	  figure {
+	    &:hover {
+	      figcaption {
+	        &.figcaptionBottom {
+	          bottom: 35%;
+	        }
+	      }
+	    }
+	  }
+	}
 }
 
 @media screen and (max-width: 400px) {
-	#about,.visionSection,.missionSection,#recent-news,#testi {
+	#about,.visionSection,.missionSection,#recent-news,#testi,#gallery,#gallery-list {
 		padding-left:20px;
 		padding-right: 20px;
 	}
@@ -110,5 +121,38 @@
 	}
 	p,.panel-body {
 		font-size : 0.9em !important;
+	}
+	.grid-item {
+	  figure {
+	    &:hover {
+	      figcaption {
+	        &.figcaptionBottom {
+	          bottom: 15%;
+	        }
+	      }
+	    }
+	  }
+	}
+	#gallery {
+		section.pd-lr-20,section.mg-lr-10 {
+			padding: 0 !important;
+			margin:0 !important;
+		}
+		.figcaptionTop {
+			display: none;
+		}
+		div.col-sm-4 {
+			margin-bottom: 20px;
+		}
+		a:hover {
+			figcaption {
+				&.figcaptionBottom {
+					bottom: 15%;
+				}
+			}
+		}
+		.container-fluid.pd-30 {
+			padding: 10px !important;
+		}
 	}
 }
