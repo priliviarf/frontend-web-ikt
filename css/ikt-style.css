@@ -84,6 +84,9 @@
 .bigTitle {
   font-size: 3.75em; }
 
+.lh-15em {
+  line-height: 1.5em; }
+
 /* --- Heading --- */
 h2, h3 {
   font-family: 'Roboto-Medium', sans-serif; }
@@ -118,7 +121,10 @@ html, body {
 figure {
   margin: 0px; }
   figure > img {
-    width: 100%; }
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   figure figcaption {
     text-align: center; }
 
@@ -626,12 +632,12 @@ body {
   height: 600px; }
 
 /* ----  custom grid-style ---- */
-.grid-item figure {
+.grid-item figure, .img-ikt figure {
   margin: 15px;
   width: 100%;
   height: 100%;
   position: relative; }
-  .grid-item figure .overlay {
+  .grid-item figure .overlay, .img-ikt figure .overlay {
     width: 100%;
     height: 100%;
     background: #113ea5;
@@ -647,42 +653,42 @@ body {
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     top: 0; }
-  .grid-item figure figcaption {
+  .grid-item figure figcaption, .img-ikt figure figcaption {
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     opacity: 0; }
-    .grid-item figure figcaption.figcaptionTop {
+    .grid-item figure figcaption.figcaptionTop, .img-ikt figure figcaption.figcaptionTop {
       top: 30px; }
-    .grid-item figure figcaption.figcaptionBottom {
+    .grid-item figure figcaption.figcaptionBottom, .img-ikt figure figcaption.figcaptionBottom {
       top: auto;
       bottom: 10px;
       font-family: 'Roboto-Medium', sans-serif; }
-  .grid-item figure a {
+  .grid-item figure a, .img-ikt figure a {
     color: #ffffff; }
-    .grid-item figure a:hover {
+    .grid-item figure a:hover, .img-ikt figure a:hover {
       color: #fac312; }
-  .grid-item figure:hover .overlay {
+  .grid-item figure:hover .overlay, .img-ikt figure:hover .overlay {
     opacity: 0.6;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     -o-border-radius: 0; }
-  .grid-item figure:hover figcaption {
+  .grid-item figure:hover figcaption, .img-ikt figure:hover figcaption {
     opacity: 1; }
-    .grid-item figure:hover figcaption.figcaptionTop {
+    .grid-item figure:hover figcaption.figcaptionTop, .img-ikt figure:hover figcaption.figcaptionTop {
       top: 40%; }
-    .grid-item figure:hover figcaption.figcaptionBottom {
+    .grid-item figure:hover figcaption.figcaptionBottom, .img-ikt figure:hover figcaption.figcaptionBottom {
       bottom: 25%; }
-.grid-item.grid-item--height2 figure img {
+.grid-item.grid-item--height2 figure img, .img-ikt.grid-item--height2 figure img {
   height: 100%;
   width: auto; }
-.grid-item.grid-item--height2 figure:hover figcaption.figcaptionTop {
+.grid-item.grid-item--height2 figure:hover figcaption.figcaptionTop, .img-ikt.grid-item--height2 figure:hover figcaption.figcaptionTop {
   top: 40%; }
-.grid-item.grid-item--height2 figure:hover figcaption.figcaptionBottom {
+.grid-item.grid-item--height2 figure:hover figcaption.figcaptionBottom, .img-ikt.grid-item--height2 figure:hover figcaption.figcaptionBottom {
   bottom: 40%; }
-.grid-item.grid-item--width2 figure img, .grid-item.grid-item--height2.grid-item--width2 figure img {
+.grid-item.grid-item--width2 figure img, .grid-item.grid-item--height2.grid-item--width2 figure img, .img-ikt.grid-item--width2 figure img, .img-ikt.grid-item--height2.grid-item--width2 figure img {
   width: 100%;
   height: auto; }
 
@@ -1109,6 +1115,14 @@ figcaption.caption {
   top: auto;
   transform: none;
   margin: 10px 0; }
+
+.be-flex {
+  display: flex; }
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
 
 .btn {
   transition: all 0.3s ease-in-out;
@@ -1546,8 +1560,17 @@ figcaption.caption {
     transform: none; }
 
   .grid-item figure:hover figcaption.figcaptionBottom {
-    bottom: 35%; } }
+    bottom: 35%; }
+
+  .be-block-768 {
+    display: block !important; } }
 @media screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.4em !important; }
+
+  h3 {
+    font-size: 1.3em !important; }
+
   #about, .visionSection, .missionSection, #recent-news, #testi, #gallery, #gallery-list {
     padding-left: 20px;
     padding-right: 20px; }
