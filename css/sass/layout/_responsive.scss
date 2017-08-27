@@ -58,9 +58,18 @@
 	    }
 	  }
 	}
+	.be-block-768 {
+		display: block !important;
+	}
 }
 
 @media screen and (max-width: 400px) {
+	h2 {
+		font-size: 1.4em !important;
+	}
+	h3 {
+		font-size: 1.3em !important;
+	}
 	#about,.visionSection,.missionSection,#recent-news,#testi,#gallery,#gallery-list {
 		padding-left:20px;
 		padding-right: 20px;
