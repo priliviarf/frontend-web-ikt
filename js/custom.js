@@ -1,22 +1,7 @@
 $(document).ready(function(){
-    
+
     // dropdown-menu
     var w = window.innerWidth;
-
-    $('#fullpage').fullpage({
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['Home', 'About Us', 'Vision and Mission', 'News', 'Agenda', 'Gallery', 'Testimonial', 'Contact Us'],
-        scrollBar: true,
-        afterRender: function(){
-            wow = new WOW( {
-              animateClass: 'animated',
-              offset:       100
-            });
-            wow.init();
-        },
-        sectionSelector : '.pagecontent',
-      });
 
     if(w > 768) {
         $('.navbar-nav-dropdown li.has-children').hover(function(){
@@ -80,13 +65,13 @@ $(document).ready(function(){
           autoplay: true,
           autoplaySpeed: 3000
         });
-    
-    // reply 
+
+    // reply
     $("#showToggle").click(function(){
         $("#thisToggle").slideToggle("slow");
     });
 
-    //mansory 
+    //mansory
     $('.grid').masonry({
       itemSelector: '.grid-item',
       columnWidth: '.grid-sizer',
@@ -101,18 +86,18 @@ $(document).ready(function(){
     $('#searchButton').on('click', function(e){
       e.preventDefault()
       $('#search-field').fadeIn()
-    })
+    });
     $('#closeSearch').on('click', function(e){
       e.preventDefault()
       $('#search-field').fadeOut()
-    })
+    });
 
     $('#languageButton').on('click', function(e){
       e.preventDefault()
       $('#language-field').fadeIn()
-    })
+    });
     $('#closeLanguage').on('click', function(e){
       e.preventDefault()
       $('#language-field').fadeOut()
-    })
+    });
 });
